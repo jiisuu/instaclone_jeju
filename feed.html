@@ -31,8 +31,53 @@
                 </a>
             </div>
         </nav>
-        <main>
-            Feed
+        <main class="feed">
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img 
+                            class="photo__avatar"
+                            src="image/avatar.jpeg"
+                        />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">jisu Kim
+                        </span>
+                        <span class="photo__location">Jeju potato FFFFFFarm 감자감자감자감자
+                        </span>
+                    </div>
+                </header>
+                <div class="photo__file-container">
+                    <img 
+                    src="image/feedPhoto.jpg"
+                    class="photo__file"
+                    />
+                </div>
+                <div class="photo__icons">
+                    <span class="photo__icon">
+                        <i class="fa fa-heart-o fa-lg"></i>
+                    </span>
+                </div>
+                <div class="photo__icons">
+                    <span class="photo__icon">
+                        <i class="fa fa-comment-o fa-lg"></i>
+                    </span>
+                </div>
+                <span class="photo__likes">35 likes</span>
+                <ul class="photo__comments">
+                    <li class="photo__comment-author">
+                        <span>Jisu Kim</span> Oh my hanlabong
+                    </li>
+                    <li class="photo__comment-author">
+                        <span>Potato Guy</span> Delicious?
+                    </li>
+                </ul>
+                <span class="photo__time-ago">11 hours ago</span>
+                <div class="photo__add-comment-container">
+                    <textarea placeholder="Add a commnet...." class="photo__add-coment"></textarea>
+                    <i class="fa fa-ellipsis-h"></i>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <nav class="footer__nav">
