@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Login | Instaclone</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <main class="login">
@@ -23,29 +24,82 @@
                         class="login_logo"
                     />
                     <form method="GET" action="feed.html">
-                        <input 
-                            type="text"
-                            name="username"
-                            placeholder="Username"
-                            required
-                        />
-                        <input 
-                            type="password"
-                            name="password"
-                            placeholder="Password"
-                            required
-                        />
-                        <input 
-                            type="submit" 
-                            value="Log in"
-                        />
+                        <div class="login__input-container">
+                            <input 
+                                type="text"
+                                name="username"
+                                placeholder="Username"
+                                required
+                                class="login__input"
+                            />
+                            <input 
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                                required
+                                class="login__input"
+                            />
+                        <!-- required = !박스를채우시오! -->
+                        <a href="#" class="login__form-link"> Forget?</a>
+                        </div>
+                        <div class="login__input-container">
+                            <input 
+                                type="submit" 
+                                value="Log in"
+                                class="login__input log__input--btn"
+                            />
+                        </div>
                     </form>
+                    <span class="login__divider">or</span>
+                    <a class="login__fb-link" href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i> Log in with Facebook
+                    </a>
                 </div>
                 <div class="login__section login__sign-up">
+                    <span class="login__text">
+                        Don't have an account?
+                        <a href="#" class="login__link">
+                            Sign up
+                        </a>
+                    </span>
                 </div>
                 <div class="login__section login__section--transparent login__app">
+                    <span lass="login__text">
+                        Get the app.
+                    </span>
+                    <div class="login__appstores">
+                        <img
+                            src="image/ios.png"
+                            alt="iOS"
+                            title="Get the app!"
+                            class="login__appstore"
+                        />
+                        <img 
+                            src="image/android.png"
+                            alt="Android"
+                            title="Get the app!"
+                            class="login__appstore"
+                        />
+                    </div>
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="fooder__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">about us</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">support</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">blog</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">press</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">api</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">jobs</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">privacy</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">terms</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">directory</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">language</a></li>
+                </ul>
+            </nav>
+            <span class="footer__copyright">© 2017 instagram</span>
+        </footer>
     </body>
 </html>
