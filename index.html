@@ -4,26 +4,28 @@
         <meta charset="UTF-8">
         <title>Login | Instaclone</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <main class="login">
             <div class="login__column">
                 <img 
-                    src="image/phone.png" 
-                    alt="Phone Image" 
+                    src="images/phone.png"
+                    alt="Phone Image"
                     title="Phone Image"
                     class="login__phone-image"
-                />
+                />                
             </div>
             <section class="login__column">
                 <div class="login__section login__sign-in">
                     <img 
-                        src="image/logo.png"
+                        src="images/logo.png"
                         alt="Logo"
                         title="Logo"
-                        class="login_logo"
+                        class="login__logo"
                     />
-                    <form method="GET" action="feed.html">
+                    <!-- x   -->
+                    <form method="GET" action="feed.html" class="login__form">
                         <div class="login__input-container">
                             <input 
                                 type="text"
@@ -32,55 +34,54 @@
                                 required
                                 class="login__input"
                             />
-                            </div>
-                            <div>
+                        </div>
+                        <div class="login__input-container">
                             <input 
                                 type="password"
                                 name="password"
                                 placeholder="Password"
                                 required
-                                class="login__input"
+                                class="login__input" 
                             />
-                        <!-- required = !박스를채우시오! -->
-                        <a href="#" class="login__form-link"> Forget?</a>
+                            <a href="#" class="login__form-link">Forgot?</a>
                         </div>
                         <div class="login__input-container">
-                            <input 
-                                type="submit" 
+                            <input
+                                type="submit"
                                 value="Log in"
-                                class="login__input log__input--btn"
+                                class="login__input login__input--btn"
                             />
                         </div>
                     </form>
                     <span class="login__divider">or</span>
                     <a class="login__fb-link" href="#">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i> Log in with Facebook
+                        <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> Log in with Facebook
                     </a>
                 </div>
                 <div class="login__section login__sign-up">
                     <span class="login__text">
-                        Don't have an account?
+                        Don't have an account? 
                         <a href="#" class="login__link">
                             Sign up
                         </a>
                     </span>
                 </div>
                 <div class="login__section login__section--transparent login__app">
-                    <span lass="login__text">
+                    <span class="login__text">
                         Get the app.
                     </span>
                     <div class="login__appstores">
-                        <img
-                            src="image/ios.png"
+                        <img 
+                            src="images/ios.png"
                             alt="iOS"
                             title="Get the app!"
-                            class="login__appstore"
+                            class="login__appstore" 
                         />
                         <img 
-                            src="image/android.png"
+                            src="images/android.png"
                             alt="Android"
                             title="Get the app!"
-                            class="login__appstore"
+                            class="login__appstore" 
                         />
                     </div>
                 </div>
@@ -88,7 +89,7 @@
         </main>
         <footer class="footer">
             <nav class="footer__nav">
-                <ul class="fooder__list">
+                <ul class="footer__list">
                     <li class="footer__list-item"><a href="#" class="footer__link">about us</a></li>
                     <li class="footer__list-item"><a href="#" class="footer__link">support</a></li>
                     <li class="footer__list-item"><a href="#" class="footer__link">blog</a></li>
