@@ -73,6 +73,7 @@
     width: 32%;
     display: block;
     position: relative;
+    margin-bottom:17px;
 }
 
 .profile-picture__picture{
@@ -96,6 +97,7 @@
 .profile__pictures{
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .profile-picture:hover .profile-picture__overlay{
     opacity: 1;
@@ -103,4 +105,56 @@
 
 .profile-picture__number:first-child{
     margin-right: 20px;
+}
+
+/* pupUp */
+.popUp{
+    position: fixed;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index:999;
+    display: none;
+}
+
+.popUp__container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.popUp i {
+    color:white;
+    position: absolute;
+    right:10px;
+    top:10px;
+    cursor: pointer;
+}
+
+.popUp__button{
+    display: block;
+    background-color: white;
+    width:450px;
+    text-align: center;
+    padding:20px 0;
+    color:black;
+}
+
+.popUp__button:first-child{
+    border-bottom:1px solid rgba(0,0,0,.0975);
+}
+
+.popUp__button:hover{
+    background-color: #efefef;
+}
+
+#cog{
+    cursor: pointer;
+    transition: all 3s linear;
+}
+#cog:hover{
+    transform: rotate(1turn);
 }
