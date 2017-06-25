@@ -70,21 +70,19 @@
 }
 
 .profile-picture{
-    width: 293px;
-    height: 293px;
+    width: 32%;
     display: block;
     position: relative;
 }
 
 .profile-picture__picture{
-   width: 293px;
-   height: 293px;
+   width: 100%;
 }
 
 .profile-picture__overlay{
     background-color: rgba(0,0,0,0.3);
     width: 293px;
-    height: 293px;
+    height: 100%;
     position: absolute;
     top:0;
     left:0;
@@ -95,7 +93,10 @@
     opacity: 0;
     transition:opacity .5s ease-in-out;
 }
-
+.profile__pictures{
+    display:flex;
+    justify-content: space-between;
+}
 .profile-picture:hover .profile-picture__overlay{
     opacity: 1;
 }
