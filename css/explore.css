@@ -55,4 +55,8 @@
     color:white;
     border-radius: 3px;
     font-weight: 600;
+    transition: all .1s linear;
+}
+.people__column a:active{
+    transform: scale(.8);
 }
