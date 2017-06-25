@@ -5,6 +5,7 @@
         body{
             padding-top: calc(80px);
             font-size: 14px;
+            appearance:none;
         }
         /* Navigation */
         .navigation{
